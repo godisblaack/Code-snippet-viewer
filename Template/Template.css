@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.language-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lang-btn {
+  background-color: #1e90ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background-color: #1473c7;
+}
+
+.code-container {
+  background-color: #282c34;
+  color: #abb2bf;
+  font-size: large;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.code-container pre {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.code-block-selector {
+  background-color: #121212;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.code-btn {
+  background-color: #1e90ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.code-btn:hover,
+.code-btn.active {
+  background-color: #1473c7;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1e90ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #1473c7;
+}
+
+.hljs {
+  background-color: #121212 !important;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}

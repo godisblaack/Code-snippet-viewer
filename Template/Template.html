@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Update the title to match the new topic -->
+  <title>Topic's Name - Codes</title>
+  <link rel="stylesheet" href="Template.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+</head>
+<body>
+  <header>
+    <!-- Update the header text to match the new topic -->
+    <h1>Topic's Name</h1>
+  </header>
+
+  <div class="container">
+    <div class="language-buttons">
+      <!-- Update the onclick attribute to match the new topic -->
+      <button class="lang-btn active" onclick="showCode('c')">C</button>
+      <button class="lang-btn" onclick="showCode('cpp')">C++</button>
+      <button class="lang-btn" onclick="showCode('csharp')">C#</button>
+      <button class="lang-btn" onclick="showCode('java')">Java</button>
+      <button class="lang-btn" onclick="showCode('python')">Python</button>
+      <button class="lang-btn" onclick="showCode('javascript')">JavaScript</button>
+    </div>
+
+    <div class="code-container" id="codeContainer">
+      <div class="code-block-selector" id="code-block-selector" style="display: none;">
+        <!-- Update the onclick attribute to match the new topic -->
+        <button class="code-btn active" onclick="showCodeBlock(0)">Approach 1</button>
+        <button class="code-btn" onclick="showCodeBlock(1)">Approach 2</button>
+        <button class="code-btn" onclick="showCodeBlock(2)">Approach 3</button>
+      </div>
+
+      <!-- Update the id and class attributes to match the new topic -->
+      <pre><code class="language-c" id="code-block-0"></code></pre>
+      <pre><code class="language-c" id="code-block-1" style="display: none;"></code></pre>
+      <pre><code class="language-c" id="code-block-2" style="display: none;"></code></pre>
+
+      <button class="copy-btn" onclick="copyCode()">Copy</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Code snippet viewer. All rights reserved.</p>
+  </footer>
+
+  <script src="Template.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      showCode('c');
+    });
+  </script>
+</body>
+</html>
